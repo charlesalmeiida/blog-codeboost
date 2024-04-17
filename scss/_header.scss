@@ -1,0 +1,18 @@
+header {
+  position: sticky;
+  top: 0;
+  padding: 2.2rem 0;
+  width: 100%;
+  background: rgba(15, 12, 27, 0.5);
+  backdrop-filter: blur(20px);
+  z-index: 10;
+  .container {
+    @include flexSpaceBetween;
+    nav {
+      @include flexSpaceBetween;
+      gap: 6.4rem;
+      max-width: 83.2rem;
+      flex: 1;
+    }
+  }
+}

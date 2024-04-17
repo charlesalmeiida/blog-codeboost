@@ -1,0 +1,41 @@
+footer {
+  padding: 8rem 0 6.3rem;
+  .container {
+    @include flex(row, flex-start, space-between);
+    .left {
+      @include flex(row, flex-start, space-between);
+      flex: 1;
+      gap: 8.4rem;
+      span {
+        color: #fff;
+        font-family: "Atyp BL Text", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 150%;
+      }
+      p {
+        color: #fff;
+        font-family: "Atyp BL Text", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 150%;
+        max-width: 62.1rem;
+      }
+    }
+    .right {
+      @include flex(row, flex-start, space-between);
+      gap: 7.1rem;
+      button {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        border: 2px solid hsla(0, 0%, 100%, 0.4);
+        @include flexTotalCenter;
+        transition: filter 0.3s ease;
+        &:hover {
+          filter: brightness(0.5);
+        }
+      }
+    }
+  }
+}
