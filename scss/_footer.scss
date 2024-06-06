@@ -3,7 +3,7 @@ footer {
   .container {
     @include flex(row, flex-start, space-between);
     .left {
-      @include flex(row, flex-start, space-between);
+      @include flex-center;
       flex: 1;
       gap: 8.4rem;
       span {
