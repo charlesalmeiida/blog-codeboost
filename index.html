@@ -8,9 +8,10 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/hamburgers.css" />
     <title>Blog - Codeboost</title>
   </head>
-  <body>
+  <body> 
     <header>
       <div class="container">
         <a href="#" class="logo"
@@ -18,36 +19,55 @@
             <img src="./assets/svg/logo.svg" alt="Logo Codeboost" /></div
         ></a>
         <nav>
-          <a href="" class="item-categorie">
-            <img src="./assets/svg/icon-tecnologia.svg" alt="Ícone tecnlogia" />
-            <span>Tecnologia</span>
-          </a>
-          <a href="" class="item-categorie">
-            <img src="./assets/svg/icon-react.svg" alt="Ícone React JS" />
-            <span>React JS</span>
-          </a>
-          <a href="" class="item-categorie">
-            <img src="./assets/svg/icon-programming.svg" alt="Ícone React JS" />
-            <span>HTML & CSS</span>
-          </a>
+          <ul>
+            <li>
+              <a href="" class="item-categorie">
+                <img
+                  src="./assets/svg/icon-tecnologia.svg"
+                  alt="Ícone tecnlogia"
+                />
+                <span>Tecnologia</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="item-categorie">
+                <img src="./assets/svg/icon-react.svg" alt="Ícone React JS" />
+                <span>React JS</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="item-categorie">
+                <img
+                  src="./assets/svg/icon-programming.svg"
+                  alt="Ícone React JS"
+                />
+                <span>HTML & CSS</span>
+              </a>
+            </li>
+          </ul>
           <form action="" class="search">
             <input type="" placeholder="Pesquise por artigo ou tema" />
             <button type="submit">
               <img src="./assets/svg/icon-lupa.svg" alt="Ícone de tecnlogia" />
             </button>
           </form>
+          <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
         </nav>
       </div>
     </header>
     <main>
-      <div class="s-hero-destaques">
+      <section class="s-hero-destaques">
         <div class="container">
           <div class="left">
             <div class="info">
               <span class="categorie">tech blog</span>
               <h2 class="white">Em destaque</h2>
             </div>
-            <a href="" class="card-post-lg">
+            <a href="destaques-post.html" class="card-post-lg">
               <div class="image">
                 <img src="./assets/img/image-post-lg.jpg" alt="Post grande" />
               </div>
@@ -76,7 +96,7 @@
             <h4 class="white">Mais populares</h4>
             <div class="all">
               <div class="item-post-populares">
-                <a href="" class="card-post-xs">
+                <a href="destaques-post.html" class="card-post-xs">
                   <div class="image">
                     <img
                       src="./assets/img/image-post-xs-01.png"
@@ -100,7 +120,7 @@
                 </a>
               </div>
               <div class="item-post-populares">
-                <a href="" class="card-post-xs">
+                <a href="destaques-post.html" class="card-post-xs">
                   <div class="image">
                     <img
                       src="./assets/img/image-post-xs-02.jpg"
@@ -124,7 +144,7 @@
                 </a>
               </div>
               <div class="item-post-populares">
-                <a href="" class="card-post-xs">
+                <a href="destaques-post.html" class="card-post-xs">
                   <div class="image">
                     <img
                       src="./assets/img/image-post-xs-03.jpg"
@@ -150,7 +170,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <section class="s-artigos">
       <div class="container">

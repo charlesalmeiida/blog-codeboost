@@ -10,9 +10,58 @@ header {
     @include flexSpaceBetween;
     nav {
       @include flexSpaceBetween;
-      gap: 6.4rem;
       max-width: 83.2rem;
       flex: 1;
+      ul {
+        @include flexTotalCenter;
+        gap: 6.4rem;
+      }
+      .hamburger {
+        margin-left: 2rem;
+        display: none;
+        .hamburger-inner,
+        .hamburger-inner::before,
+        .hamburger-inner::after {
+          background-color: white;
+        }
+      }
+    }
+  }
+  @include responsivo("laptop") {
+    .container {
+      nav {
+        max-width: 75%;
+      }
+    }
+  }
+  @include responsivo("tablet") {
+    .container {
+      nav {
+        max-width: 100%;
+        justify-content: flex-end;
+        ul {
+          display: none;
+        }
+        .hamburger {
+          display: block;
+        }
+      }
+    }
+  }
+  @include responsivo("mobile") {
+    .container {
+      .logo {
+        max-width: 13rem;
+      }
+      nav {
+        form {
+          display: none;
+        }
+        .hamburger {
+          margin-left: 0;
+          padding: 0;
+        }
+      }
     }
   }
 }

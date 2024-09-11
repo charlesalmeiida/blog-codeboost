@@ -34,3 +34,15 @@ body {
 ul {
   list-style-type: none;
 }
+
+section {
+  @include responsivo("laptop") {
+    padding: 6rem 0 !important;
+  }
+  @include responsivo("tablet") {
+    padding: 5rem 0 !important;
+  }
+  @include responsivo("mobile") {
+    padding: 4rem 0 !important;
+  }
+}

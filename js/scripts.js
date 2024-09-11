@@ -8,3 +8,11 @@ function scrollToTop() {
 }
 
 pageUp.addEventListener("click", scrollToTop)
+
+const btnHamburger = document.querySelector(".hamburger")
+
+function hamburgerActive() {
+  btnHamburger.classList.toggle("is-active")
+}
+
+btnHamburger.addEventListener("click", hamburgerActive)

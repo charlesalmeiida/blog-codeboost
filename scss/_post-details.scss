@@ -293,3 +293,23 @@
     }
   }
 }
+
+.posts-semelhantes {
+  padding: 12rem 0;
+  .container {
+    .top {
+      @include flexSpaceBetween;
+      p {
+        @include flexTotalCenter;
+        gap: 1.6rem;
+        color: #acb4bf;
+        font-size: 1.6rem;
+        line-height: 150%;
+      }
+    }
+    .all {
+      @include flexSpaceBetween;
+      margin-top: 4rem;
+    }
+  }
+}
