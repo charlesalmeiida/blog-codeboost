@@ -13,6 +13,7 @@ const btnHamburger = document.querySelector(".hamburger")
 
 function hamburgerActive() {
   btnHamburger.classList.toggle("is-active")
+  document.documentElement.classList.toggle("menu-opened")
 }
 
 btnHamburger.addEventListener("click", hamburgerActive)
